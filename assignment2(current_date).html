@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Current date</title>
+  </head>
+  <body>
+
+    
+    <script type="text/javascript">
+
+	let date = new Date();
+				let day = date.getDate(); 	// to get the current day
+				let month = date.getMonth()+1; // to get the current month, that is why we have +1 at the back
+				let year = date.getFullYear(); // to get the current Year.
+				
+				date = month+'-'+day+'-'+year;
+
+				window.alert(date + '\n'+  month+'/'+day+'/'+year  + '\n' + day+'-'+month+'-'+year +'\n' + day+'/'+month+'/'+year); // \n is used for line break
+	
+
+    </script>
+  </body>
+</html>

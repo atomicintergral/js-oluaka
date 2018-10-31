@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Days to Christmas</title>
+  </head>
+  <body>
+
+    
+    <script type="text/javascript">
+
+		now = new Date();     // gets it to the current date
+				let christmas = new Date(now.getFullYear(), 11, 25); //gets  the current year
+				if (now.getMonth()==11 && now.getDate()>25){
+					christmas.setFullYear(christmas.getFullYear()+1); 
+				}  
+				let newday=1000*60*60*24;
+				
+				var timeDiffernce = Math.ceil((christmas.getTime()-now.getTime())/(newday)); //the time difference from today and christmas
+				
+				window.alert(timeDiffernce + " days left until Christmas!");   //tells how days to christmas
+
+    </script>
+  </body>
+</html>

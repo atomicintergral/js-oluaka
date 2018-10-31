@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Random Number</title>
+  </head>
+  <body>
+    
+    <script type="text/javascript">
+	
+			var input = prompt("Chose a random number between 0 and 10"); // takes input from user
+				var randomNumber = Math.floor(Math.random() * 10); 	//generates a random number between 0 and 10
+				
+			if(input == randomNumber){		// Condition to see if user input is equal to the random number
+				
+				alert("Good work");			// if user input is equal to the random number outputs Good work
+			}
+			else{
+				
+				alert("Not matched the number was " + randomNumber);	// if user input is not equal to the random number outputs Not matched and tell them the random number
+				
+			}
+			
+
+    </script>
+  </body>
+</html>

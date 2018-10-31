@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>temperature converter</title>
+  </head>
+  <body>
+
+    
+    <script type="text/javascript">
+
+
+	var c=60;	// Temperature in Celsius
+	var f=45;	// Temperature in Fahrenheit
+	
+	
+	//a function that converts  celsius to fahrenhiet 
+	function toFahrenheit(){
+		return ((9/5) * c ) + 32;
+	
+	}
+	
+	//a function that converts fahrenhiet to celsius
+	function toCelsius(){
+		return (5/9) * (f - 32 );
+	
+	}
+	
+	
+	document.write("60C is  " + toFahrenheit() + "F" + "<br>");  // This Output the value in fahrenhiet
+	
+	document.write("45F is  " + toCelsius() + "C");  // This Output the value in fahrenhiet
+
+    </script>
+  </body>
+</html>
